@@ -39,15 +39,10 @@ RUN apk add --no-cache \
 #     curl -fsSL --ipv4 https://github.com/phpredis/phpredis/archive/5.3.4.tar.gz | tar xvz -C "/usr/src/php/ext/redis" --strip 1; \
 #     docker-php-ext-install redis
 # Install nodejs and npm for frontend.
-COPY ./ext.conf /usr/local/etc/php/conf.d/
 RUN apk add --no-cache nodejs npm
 
 # protobuf
-RUN apk add protoc
-
-# git configs
-RUN git config --global user.name "warren"
-RUN git config --global user.email "warr@1bit.com.ph"
+# RUN apk add protoc
 
 
 # add cron fo everyminute

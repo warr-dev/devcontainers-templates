@@ -6,7 +6,6 @@ version: "3.3"
 services:
   cli:
     build: cli
-    image: warr/php-cli
     command: crond -f -l 8
     volumes:
       - ../projects:/workspaces/laravel
@@ -37,6 +36,7 @@ services:
 
     ports:
       - 8000:80
+      - 8001:2000
     depends_on:
       - fpm
 
