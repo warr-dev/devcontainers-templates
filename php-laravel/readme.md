@@ -9,6 +9,7 @@ reference: [laravel devcontainer](https://github.com/theomessin/laravel-devconta
 ## How to use
 - clone this repo
 - use vscode (local or remote ssh)
+- be sure to be on the path where .devcontainer resides
 - this is what will it look like ouside devcontainer (.devcontainer was hidden)
  ![alt text](assets/5.png)
 - click remote options (bottom left)
